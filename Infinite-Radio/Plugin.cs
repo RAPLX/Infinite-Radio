@@ -9,6 +9,7 @@
         public override string Name { get; } = "InfRadio";
         public override string Author { get; } = "RAPLX";
         public override string Prefix { get; } = "InfRadio";
+        public override Version Version { get; } = new Version(1, 0, 0);
         public override Version RequiredExiledVersion { get; } = new(8, 0, 0);
 
         public EventHandlers Handler;
