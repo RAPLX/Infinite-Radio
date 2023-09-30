@@ -1,6 +1,7 @@
 ﻿namespace Infinite_Radio
 {
     using Exiled.API.Features;
+    using System;
     using Player = Exiled.Events.Handlers.Player;
 
     public class Plugin : Plugin<Config>
@@ -8,6 +9,7 @@
         public override string Name { get; } = "InfRadio";
         public override string Author { get; } = "RAPLX";
         public override string Prefix { get; } = "InfRadio";
+        public override Version RequiredExiledVersion { get; } = new(8, 0, 0);
 
         public EventHandlers Handler;
 
